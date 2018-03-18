@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Remote Control</title>
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+  <link rel="stylesheet" href="vendor/reveal.css">
+  <link rel="stylesheet" href="vendor/black.css">
+    <style>
+      * {
+        -webkit-touch-callout: none;
+        -webkit-text-size-adjust: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0px;
+        min-height: 100vh;
+      }
+      .hud {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hud">
+      <div style="color: green;">Status: <span id="status">Connecting...</span></div>
+      <div style="color: green;">Index: <span id="index"></span></div>
+    </div>
+    <div class="reveal">
+      <div class="slides" id="preview">
+      </div>
+    </div>
+  </body>
+  <script src="vendor/head.min.js"></script>
+  <script src="vendor/reveal.js"></script>
+  <script src="vendor/hammer.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</html>

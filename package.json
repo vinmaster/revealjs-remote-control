@@ -1,0 +1,22 @@
+{
+  "name": "remote-control",
+  "version": "1.0.0",
+  "description": "Remote control for Reveal.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon -e 'js' -i 'public' server.js",
+    "lint": "eslint --ignore-pattern 'public/vendor' ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "nodemon": "^1.17.2"
+  }
+}

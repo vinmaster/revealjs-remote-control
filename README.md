@@ -1,5 +1,7 @@
 # Revealjs Remote Control
 
+![Screenshot](/screenshot.png)
+
 A small plugin to allow remote control and view of next section for [reveal.js](https://github.com/hakimel/reveal.js). Right now it only supports viewing next section and movement between sections
 
 The preview next section is using a small subset of reveal.js syntax and sending the innerHTML to the connected remote control clients

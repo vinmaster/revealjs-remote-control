@@ -40,6 +40,12 @@ mc
   .on('swipeleft', (e) => {
     socket.emit('move', { direction: 'right' });
     e.preventDefault();
+  })
+  .on('pinch', (e) => {
+    console.log('pinch', e)
+  })
+  .on('pan', (e) => {
+    console.log('pan', e)
   });
 
 document.addEventListener('keydown', (e) => {
